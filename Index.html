@@ -1,74 +1,150 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>DemoTrack</title>
+    <title>Welcome to Knowledge Transfer</title>
 
     <style>
-        body {
+        * {
+            box-sizing: border-box;
             margin: 0;
+            padding: 0;
+        }
+
+        body {
             font-family: Arial, sans-serif;
-            background: #f4f6f8;
-            color: #222;
-        }
-
-        header {
-            background: #1f2937;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
             color: white;
-            padding: 20px;
-            text-align: center;
         }
 
-        main {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 30px;
+        .container {
+            width: 90%;
+            max-width: 900px;
             text-align: center;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 60px 30px;
         }
 
-        .button {
+        .icon {
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .welcome {
+            font-size: 20px;
+            line-height: 1.7;
+            margin: 0 auto 35px;
+            max-width: 700px;
+            color: #e0e7ff;
+        }
+
+        .journey {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .more {
+            font-size: 18px;
+            color: #bfdbfe;
+            margin-bottom: 35px;
+        }
+
+        .start-btn {
             display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: #2563eb;
-            color: white;
+            padding: 16px 35px;
+            background: white;
+            color: #1d4ed8;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
         }
 
-        .button:hover {
-            background: #1d4ed8;
+        .start-btn:hover {
+            transform: translateY(-3px);
+            background: #dbeafe;
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #c7d2fe;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 34px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .welcome {
+                font-size: 17px;
+            }
+
+            .journey {
+                font-size: 22px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>DemoTrack</h1>
-        <p>Demo Location & Management System</p>
-    </header>
+    <div class="container">
 
-    <main>
-        <h2>Welcome to Knowledge Transfer</h2>
+        <div class="icon">📚</div>
 
-        <p>
-            This is our first GitHub Pages web application.
+        <h1>Welcome to Knowledge Transfer</h1>
+
+        <h2>Learn • Share • Grow • Succeed</h2>
+
+        <p class="welcome">
+            Welcome to our Knowledge Transfer platform.
+            This is a place where knowledge, experience, ideas,
+            and learning come together.
         </p>
 
-        <p>
-            We will gradually turn this into a complete demo system.
+        <div class="journey">
+            🚀 Let's Start the New Journey
+        </div>
+
+        <p class="more">
+            Explore, learn, share your knowledge and discover
+            many more opportunities along the way.
         </p>
 
-        <a class="button" href="login.html">
-            Go to Login
+        <a href="login.html" class="start-btn">
+            Start Your Journey →
         </a>
-    </main>
+
+        <div class="footer">
+            © 2026 Knowledge Transfer | Learning Together, Growing Together
+        </div>
+
+    </div>
 
 </body>
 </html>
+
